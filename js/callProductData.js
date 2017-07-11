@@ -1,6 +1,5 @@
 var dataDump = $.getJSON( "json/productData.json", function() {
 	var productObjects = dataDump.responseJSON.data;
-	console.log(productObjects);
 	$.each( productObjects, function( i, product ) {
 		$(".products").append(
 			"<li class='four columns product'>" +
