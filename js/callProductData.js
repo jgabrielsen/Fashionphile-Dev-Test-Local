@@ -4,7 +4,7 @@ var dataDump = $.getJSON( "json/productData.json", function() {
 	$.each( productObjects, function( i, product ) {
 		$(".products").append(
 			"<li class='four columns product'>" +
-			'<img class="product-image" src="http://www.fashionphile.com/'+product.images+'" alt="'+product.name+'" onError="this.onerror=null;this.src=\'images/noimage.png\';" />'+
+			'<img class="product-image" src="https://www.fashionphile.com/'+product.images+'" alt="'+product.name+'" onError="this.onerror=null;this.src=\'images/noimage.png\';" />'+
 			'<div class="product-info">'+
 	        '<p class="product-name">'+product.name+'</p>'+
         	'<p class="product-brand">'+product.brand+'</p>'+
