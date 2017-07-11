@@ -1,4 +1,4 @@
-var url = "../json/productData.json?callback=?";
+var url = "../json/productData.json";
 
 $.ajax({
     url: url,
