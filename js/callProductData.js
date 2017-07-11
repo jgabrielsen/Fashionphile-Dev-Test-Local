@@ -1,16 +1,4 @@
-var url = "json/productData.json";
-
-// $.ajax({
-//     url: url,
-//     dataType: 'JSONP',
-//     jsonpCallback: 'callback',
-//     type: 'GET',
-//     success: function (data) {
-//         console.log(data);
-//     }
-// });
-
-var dataDump = $.getJSON( url, function() {
+var dataDump = $.getJSON( "json/productData.json", function() {
 	var productObjects = dataDump.responseJSON.data;
 	console.log(productObjects);
 	$.each( productObjects, function( i, product ) {
